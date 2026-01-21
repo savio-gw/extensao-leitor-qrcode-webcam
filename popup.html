@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 300px; font-family: sans-serif; padding: 10px; text-align: center; }
+    #preview { width: 100%; border-radius: 8px; background: #eee; }
+    .status { margin-top: 10px; font-size: 14px; color: #666; }
+    #canvas { display: none; }
+  </style>
+</head>
+<body>
+  <h3>Leitor QR Code</h3>
+  <video id="preview" autoplay playsinline></video>
+  <canvas id="canvas"></canvas>
+  <div class="status" id="status">Aponte para um QR Code</div>
+
+  <script src="node_modules/jsqr/dist/jsQR.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

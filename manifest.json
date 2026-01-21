@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "QR Code Keyboard Emulator",
+  "version": "1.1",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "contentSettings"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
